@@ -50,7 +50,7 @@ func TestHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// 正しいフォーマットでレスポンスを返す
-	fmt.Fprintf(w, "データベース接続テストが成功しました　by ごす（Reservationsの件数：%d）", reservation_count)
+	fmt.Fprintf(w, "データベース接続テストが成功しました by ごす ver0.1（Reservationsの件数：%d）", reservation_count)
 }
 
 func database_test() (int, error) {
