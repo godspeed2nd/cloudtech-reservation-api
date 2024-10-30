@@ -28,7 +28,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// hello worldという文字列をレスポンスとして返す
-	fmt.Fprintf(w, "API接続テストが成功しました by ごす ver0.6")
+	fmt.Fprintf(w, "API接続テストが成功しました by ごす ver0.7")
 }
 
 func TestHandler(w http.ResponseWriter, r *http.Request) {
@@ -50,7 +50,7 @@ func TestHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// 正しいフォーマットでレスポンスを返す
-	fmt.Fprintf(w, "データベース接続テストが成功しました by ごす ver0.6（Reservationsの件数：%d）", reservation_count)
+	fmt.Fprintf(w, "データベース接続テストが成功しました by ごす ver0.7（Reservationsの件数：%d）", reservation_count)
 }
 
 func database_test() (int, error) {
